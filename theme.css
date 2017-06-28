@@ -1,22 +1,88 @@
+/* PLUGINS */
+@import "https://rawgit.com/AlexFlipnote/Discord_Theme/master/assets/BA-D.css";
+@import "https://rawgit.com/AlexFlipnote/Discord_Theme/master/assets/autoMemberlist.css";
+@import "https://cdn.rawgit.com/kanadeko/cozy-discord/master/cozy-discord.css";
+@import "https://rawgit.com/AlexFlipnote/Discord_Theme/master/assets/hideSearch.css";
+@import "https://rawgit.com/AlexFlipnote/Discord_Theme/master/assets/minimalStatusPicker.css";
+@import "https://cdn.rawgit.com/Vap0r1ze/Discord-Nitro-Badges/master/nitro.css";
+
+/* FONTS */
+
+@import url("https://fonts.googleapis.com/css?family=Fredoka+One|Abril+Fatface|Muli|Raleway|Ubuntu");
+
+@font-face {
+    font-family: firacode;
+    src: url("https://rawgit.com/bollwyvl/firacode-webfont/master/FiraCode-Regular.ttf");
+}
+
+.channel-members h2,
+.guild-channels span{
+    font-family: "Fredoka One" !important;
+}
+
+.username-wrapper .user-name,
+.username, .nickname,
+.member-username-inner,
+.embed-author-name,
+.guild-header .timestamp .tooltip span {
+    font-family: "Muli" !important;
+}
+
+.member-role .name{
+    font-family: "Ubuntu" !important;
+}
+
+.embed-field,
+.message-text, 
+.member-activity,
+.channel .channel-name
+.scroller-fzNley .scroller-NXV0-d {
+    font-family: "Raleway" !important;
+}
+
+code {
+    font-family: "firacode" !important;
+}
+
+/* .timestamp, .tooltip { */
+    /* font-family: "Abril Fatface"; */
+/* } */
+
+/* === */
+
 .theme-dark .user-settings-account:after,
 .theme-light .user-settings-account:after {
   color: var(--accent); font-weight: bold;
   content: "Theme version: 1.0.4.78";
 }
 /* GLOBAL */
+/* :root { */
+  /* --<var>: <value> */
+  /* --notif: #7A78BD; */
+  /* --accent: #7A78BD; */
+  /* --dark-primary: #212121; */
+  /* --dark-secondary: #303030; */
+  /* --dark-highlight: #181818; */
+  /* --light-primary: #ddd; */
+  /* --light-secondary: #ecf0f1; */
+  /* --light-highlight: #9E9E9E; */
+  /* --light-dark-text: #2e3136; */
+  /* --nsfw-image: url("https://i.alexflipnote.xyz/c2472b.png"); */
+/* } */
 :root {
-  /*--<var>: <value>*/
-  --notif: #7A78BD;
-  --accent: #7A78BD;
-  --dark-primary: #212121;
-  --dark-secondary: #303030;
-  --dark-highlight: #181818;
-  --light-primary: #ddd;
-  --light-secondary: #ecf0f1;
-  --light-highlight: #9E9E9E;
-  --light-dark-text: #2e3136;
+  /* --<var>: <value> */
+  --notif: #dc322f;
+  --accent: #859900;
+  --dark-primary: #002b36;
+  --dark-secondary: #073642;
+  --dark-highlight: #002b36;
+  --light-primary: #eee8d5;
+  --light-secondary: #fdf6e3;
+  --light-highlight: #002b36;
+  --light-dark-text: #839496;
   --nsfw-image: url("https://i.alexflipnote.xyz/c2472b.png");
 }
+
 .theme-dark .messages-wrapper .messages .divider span,
 .theme-light .messages-wrapper .messages .divider span {
   background-color: transparent;
@@ -191,8 +257,8 @@
   background-color: var(--dark-highlight);
   border-radius: 0;
 }
-.message-reactions-modal .message-reactions-reactors {
-  background-color: var(--dark-primary);
+.message-reactions-modal .message-reactions-reactors .channel-textarea .channel-textarea-inner {
+  background-color: var(--dark-primary) !important;
 }
 /* END: Reaction */
 
@@ -1079,8 +1145,8 @@
 /* DARK */
 .theme-dark .channel-textarea-inner { background-color: transparent; }
 .theme-dark .channel-textarea-inner .channel-textarea-upload:hover { background-color: transparent; }
-.theme-dark .chat form .typing { background-color: rgba(48, 48, 48, .9); padding-left: 10px; padding-right: 10px; }
-.theme-dark .chat form {background-color: #3c3c3c; border: none; color: #fff; }
+.theme-dark .chat form .typing { background-color: var(--dark-primary); padding-left: 10px; padding-right: 10px; }
+.theme-dark .chat form {background-color: var(--dark-primary); border: none; color: #fff; }
 .theme-dark #autocomplete-popout .row.selected, #autocomplete-popout .row:hover { background: #181818 }
 .theme-dark #autocomplete-popout .row { -webkit-transition: all 50ms ease; transition: all 50ms ease; }
 .theme-dark #autocomplete-popout .scroller::-webkit-scrollbar { display: none }
